@@ -14,10 +14,6 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
           rel="stylesheet"
         ></link>
-        <link
-          rel="stylesheet"
-          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.splashDiv}>
@@ -113,7 +109,10 @@ export default function Home() {
 
       <section className={styles.section1}>
         <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>Modern and Reliable</h2>
+          <h2 className={styles.sectionSubtitle}>
+            Modern and <br />
+            Reliable
+          </h2>
           <p className={styles.sectionParagraph}>
             Built with the technologies used by all the biggests companies in
             the world.
@@ -124,6 +123,25 @@ export default function Home() {
           alt="Illustration"
           className={styles.section1Illustration}
         />
+      </section>
+
+      <section className={styles.section3}>
+        <div className={styles.sectionTitleDiv}>
+          <h2 className={styles.sectionSubtitle}>Partners Projects</h2>
+          <p className={styles.sectionParagraph}>Checkout some of our work</p>
+        </div>
+        <div className={styles.projectsDiv}>
+          <div className={styles.projectCard}>
+            <img src="" alt="Logo" />
+            <h3 className={styles.projectName}>Share Todo</h3>
+            <button
+              className={styles.projectBtn}
+              onClick={() => window.open("https://github.com/ target: blank")}
+            >
+              Visit
+            </button>
+          </div>
+        </div>
       </section>
     </div>
   );
