@@ -1,6 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
+import uiImage from "../public/ui.svg";
+import scrollIcon from "../public/scrollIcon.svg";
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -10,6 +13,10 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
           rel="stylesheet"
         ></link>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.splashDiv}>
@@ -88,7 +95,24 @@ export default function Home() {
           />
         </svg>
         <h2 className={styles.subtitle}>Excellence in software</h2>
+        <img src={scrollIcon} alt="Scroll" className={styles.scrollIcon} />
       </div>
+
+      <section className={styles.section1}>
+        <div className={styles.section1Div}>
+          <div className={styles.sectionTitleDiv}>
+            <h2 className={styles.sectionSubtitle}>Tailored made software</h2>
+            <p>100% made for your needs.</p>
+          </div>
+        </div>
+        <div className={styles.section1Div}>
+          <img
+            src={uiImage}
+            alt="Illustration"
+            className={styles.section1Illustration}
+          />
+        </div>
+      </section>
     </div>
   );
 }

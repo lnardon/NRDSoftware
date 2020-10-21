@@ -1,5 +1,6 @@
 .container {
-  min-height: 100vh;
+  width: 100%;
+  min-height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +12,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-color: #191919;
   padding: 0rem 1rem;
@@ -41,7 +42,52 @@
   font-weight: 400;
   color: transparent;
   animation: subtitleAnimation 0.5s ease-in forwards 1.7s;
-  margin: 0;
+  margin: 1rem 0rem;
+}
+
+.scrollIcon {
+  width: 20px;
+  position: absolute;
+  bottom: 2rem;
+  animation: scrollAnimation 1.3s ease alternate infinite;
+}
+
+.section1 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100vh;
+  background-color: #f1f1f1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section1Illustration {
+  height: 100%;
+}
+
+.section1Div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+}
+
+.sectionTitleDiv {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  -webkit-animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-right 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+.sectionSubtitle {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin: 0rem;
+  text-align: center;
 }
 
 @keyframes animateLogo {
@@ -70,5 +116,36 @@
 
   to {
     color: #e1e1e1;
+  }
+}
+
+@keyframes scrollAnimation {
+  from {
+    bottom: 2rem;
+  }
+
+  to {
+    bottom: 1rem;
+  }
+}
+
+@-webkit-keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes slide-right {
+  0% {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
   }
 }
