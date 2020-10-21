@@ -44,6 +44,10 @@ i18n.use(initReactI18next).init({
   },
 });
 
+i18n.on("languageChanged", (lng) => {
+  console.log(lng);
+});
+
 export default function Home() {
   const { t } = useTranslation();
 
@@ -133,6 +137,14 @@ export default function Home() {
           />
         </svg>
         <h2 className={styles.subtitle}>{t("logoSubtitle")}</h2>
+        <select
+          className={styles.languageSelect}
+          name="language"
+          onChange={(e) => i18n.changeLanguage(e.target.value)}
+        >
+          <option value="en">en-US</option>
+          <option value="pt">Pt-BR</option>
+        </select>
         <img src={scrollIcon} alt="Scroll" className={styles.scrollIcon} />
       </div>
 
