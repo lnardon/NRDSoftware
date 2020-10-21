@@ -99,19 +99,15 @@ export default function Home() {
       </div>
 
       <section className={styles.section1}>
-        <div className={styles.section1Div}>
-          <div className={styles.sectionTitleDiv}>
-            <h2 className={styles.sectionSubtitle}>Tailored made software</h2>
-            <p>100% made for your needs.</p>
-          </div>
+        <div className={styles.sectionTitleDiv}>
+          <h2 className={styles.sectionSubtitle}>Tailored made software</h2>
+          <p className={styles.sectionParagraph}>100% made for your needs.</p>
         </div>
-        <div className={styles.section1Div}>
-          <img
-            src={uiImage}
-            alt="Illustration"
-            className={styles.section1Illustration}
-          />
-        </div>
+        <img
+          src={uiImage}
+          alt="Illustration"
+          className={styles.section1Illustration}
+        />
       </section>
     </div>
   );
