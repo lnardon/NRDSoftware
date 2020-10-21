@@ -1,11 +1,52 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import i18n from "i18next";
+import { useTranslation, initReactI18next } from "react-i18next";
 
+import styles from "../styles/Home.module.css";
 import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
 
+i18n.use(initReactI18next).init({
+  resources: {
+    en: {
+      translation: {
+        logoSubtitle: "Excellence in software",
+        section1Title: "Tailored made software",
+        section1Subtitle: "100% made for your needs.",
+        section2Title: "Modern and Reliable",
+        section2Subtitle:
+          "Built with the technologies used by all the biggests companies in the world.",
+        projectsTitle: "Our projects",
+        projectsSubtitle: "Check some of our work.",
+        projectBtnLabel: "Visit",
+      },
+    },
+    pt: {
+      translation: {
+        logoSubtitle: "Excelencia em software",
+        section1Title: "Software feito exclusivamente para te atender",
+        section1Subtitle: "100% criado para atender suas necessidades",
+        section2Title: "Moderno e Confiavel",
+        section2Subtitle:
+          "Construido com as tecnologias utilizadas pelas maiores empresas",
+        projectsTitle: "Nossos projetos",
+        projectsSubtitle: "Confira alguns de nossos projetos.",
+        projectBtnLabel: "Visitar",
+      },
+    },
+  },
+  lng: "en",
+  fallbackLng: "en",
+
+  interpolation: {
+    escapeValue: false,
+  },
+});
+
 export default function Home() {
+  const { t } = useTranslation();
+
   return (
     <div className={styles.container}>
       <Head>
@@ -91,14 +132,14 @@ export default function Home() {
             mask="url(#path-1-outside-1)"
           />
         </svg>
-        <h2 className={styles.subtitle}>Excellence in software</h2>
+        <h2 className={styles.subtitle}>{t("logoSubtitle")}</h2>
         <img src={scrollIcon} alt="Scroll" className={styles.scrollIcon} />
       </div>
 
       <section className={styles.section1}>
         <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>Tailored made software</h2>
-          <p className={styles.sectionParagraph}>100% made for your needs.</p>
+          <h2 className={styles.sectionSubtitle}>{t("section1Title")}</h2>
+          <p className={styles.sectionParagraph}> {t("section1Subtitle")}</p>
         </div>
         <img
           src={uiImage}
@@ -109,14 +150,8 @@ export default function Home() {
 
       <section className={styles.section1}>
         <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>
-            Modern and <br />
-            Reliable
-          </h2>
-          <p className={styles.sectionParagraph}>
-            Built with the technologies used by all the biggests companies in
-            the world.
-          </p>
+          <h2 className={styles.sectionSubtitle}>{t("section2Title")}</h2>
+          <p className={styles.sectionParagraph}>{t("section2Subtitle")}</p>
         </div>
         <img
           src={starImage}
@@ -127,18 +162,18 @@ export default function Home() {
 
       <section className={styles.section3}>
         <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>Partners Projects</h2>
-          <p className={styles.sectionParagraph}>Checkout some of our work</p>
+          <h2 className={styles.sectionSubtitle}>{t("projectsTitle")}</h2>
+          <p className={styles.sectionParagraph}>{t("projectsSubtitle")}</p>
         </div>
         <div className={styles.projectsDiv}>
           <div className={styles.projectCard}>
             <img src="" alt="Logo" />
-            <h3 className={styles.projectName}>Share Todo</h3>
+            <h3 className={styles.projectName}>Share List</h3>
             <button
               className={styles.projectBtn}
               onClick={() => window.open("https://github.com/ target: blank")}
             >
-              Visit
+              {t("projectBtnLabel")}
             </button>
           </div>
         </div>
