@@ -1,8 +1,9 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import uiImage from "../public/ui.svg";
 import scrollIcon from "../public/scrollIcon.svg";
+import uiImage from "../public/ui.svg";
+import starImage from "../public/star.svg";
 
 export default function Home() {
   return (
@@ -105,6 +106,21 @@ export default function Home() {
         </div>
         <img
           src={uiImage}
+          alt="Illustration"
+          className={styles.section1Illustration}
+        />
+      </section>
+
+      <section className={styles.section1}>
+        <div className={styles.sectionTitleDiv}>
+          <h2 className={styles.sectionSubtitle}>Modern and Reliable</h2>
+          <p className={styles.sectionParagraph}>
+            Built with the technologies used by all the biggests companies in
+            the world.
+          </p>
+        </div>
+        <img
+          src={starImage}
           alt="Illustration"
           className={styles.section1Illustration}
         />
