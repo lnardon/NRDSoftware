@@ -2,50 +2,19 @@ import Head from "next/head";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 
+import translations from "../translations.json";
 import styles from "../styles/Home.module.css";
 import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
 
 i18n.use(initReactI18next).init({
-  resources: {
-    en: {
-      translation: {
-        logoSubtitle: "Excellence in software",
-        section1Title: "Tailored made software",
-        section1Subtitle: "100% made for your needs.",
-        section2Title: "Modern and Reliable",
-        section2Subtitle:
-          "Built with the technologies used by all the biggests companies in the world.",
-        projectsTitle: "Our projects",
-        projectsSubtitle: "Check some of our work.",
-        projectBtnLabel: "Visit",
-      },
-    },
-    pt: {
-      translation: {
-        logoSubtitle: "Excelencia em software",
-        section1Title: "Software feito exclusivamente para te atender",
-        section1Subtitle: "100% criado para atender suas necessidades",
-        section2Title: "Moderno e Confiavel",
-        section2Subtitle:
-          "Construido com as tecnologias utilizadas pelas maiores empresas",
-        projectsTitle: "Nossos projetos",
-        projectsSubtitle: "Confira alguns de nossos projetos.",
-        projectBtnLabel: "Visitar",
-      },
-    },
-  },
+  resources: translations,
   lng: "en",
   fallbackLng: "en",
-
   interpolation: {
     escapeValue: false,
   },
-});
-
-i18n.on("languageChanged", (lng) => {
-  console.log(lng);
 });
 
 export default function Home() {
@@ -142,7 +111,7 @@ export default function Home() {
           name="language"
           onChange={(e) => i18n.changeLanguage(e.target.value)}
         >
-          <option value="en">en-US</option>
+          <option value="en">En-US</option>
           <option value="pt">Pt-BR</option>
         </select>
         <img src={scrollIcon} alt="Scroll" className={styles.scrollIcon} />
@@ -151,7 +120,7 @@ export default function Home() {
       <section className={styles.section1}>
         <div className={styles.sectionTitleDiv}>
           <h2 className={styles.sectionSubtitle}>{t("section1Title")}</h2>
-          <p className={styles.sectionParagraph}> {t("section1Subtitle")}</p>
+          <p className={styles.sectionParagraph}>{t("section1Subtitle")}</p>
         </div>
         <img
           src={uiImage}

@@ -1,0 +1,26 @@
+{
+  "en": {
+    "translation": {
+      "logoSubtitle": "Excellence in software",
+      "section1Title": "Tailored made software",
+      "section1Subtitle": "100% made for your needs.",
+      "section2Title": "Modern and Reliable",
+      "section2Subtitle": "We build everything with the technologies used by all the biggest companies in the world.",
+      "projectsTitle": "Our projects",
+      "projectsSubtitle": "Check some of our work.",
+      "projectBtnLabel": "Visit"
+    }
+  },
+  "pt": {
+    "translation": {
+      "logoSubtitle": "Excelencia em software",
+      "section1Title": "Software feito exclusivamente para te atender",
+      "section1Subtitle": "100% criado para atender suas necessidades",
+      "section2Title": "Moderno e Confiavel",
+      "section2Subtitle": "Construimos tudo com as tecnologias utilizadas pelas maiores empresas do mundo.",
+      "projectsTitle": "Nossos projetos",
+      "projectsSubtitle": "Confira alguns de nossos projetos.",
+      "projectBtnLabel": "Visitar"
+    }
+  }
+}

@@ -46,7 +46,7 @@
 }
 
 .scrollIcon {
-  width: 20px;
+  width: 15px;
   position: absolute;
   bottom: 2rem;
   animation: scrollAnimation 1.3s ease alternate infinite;
