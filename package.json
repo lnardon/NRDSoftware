@@ -14,7 +14,8 @@
     "react": "16.14.0",
     "react-animate-on-scroll": "^2.1.5",
     "react-dom": "16.14.0",
-    "react-i18next": "^11.7.3"
+    "react-i18next": "^11.7.3",
+    "react-transition-group": "^4.4.1"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.12.1",

@@ -1,12 +1,14 @@
 import Head from "next/head";
+import { useRef } from "react";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
+import { CSSTransition } from "react-transition-group";
 
 import translations from "../translations.json";
-import styles from "../styles/Home.module.css";
 import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
+import taskListLogo from "../public/taskListLogo.png";
 
 i18n.use(initReactI18next).init({
   resources: translations,
@@ -21,16 +23,17 @@ export default function Home() {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.container}>
+    <div className="container">
       <Head>
         <title>NRD Software</title>
         <link
           href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
           rel="stylesheet"
         ></link>
+        <link rel="stylesheet" href="../static/home.css" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={styles.splashDiv}>
+      <div className="splashDiv">
         <svg
           width="660"
           height="263"
@@ -105,54 +108,56 @@ export default function Home() {
             mask="url(#path-1-outside-1)"
           />
         </svg>
-        <h2 className={styles.subtitle}>{t("logoSubtitle")}</h2>
+        <h2 className="subtitle">{t("logoSubtitle")}</h2>
         <select
-          className={styles.languageSelect}
+          className="languageSelect"
           name="language"
           onChange={(e) => i18n.changeLanguage(e.target.value)}
         >
           <option value="en">En-US</option>
           <option value="pt">Pt-BR</option>
         </select>
-        <img src={scrollIcon} alt="Scroll" className={styles.scrollIcon} />
+        <img src={scrollIcon} alt="Scroll" className="scrollIcon" />
       </div>
 
-      <section className={styles.section1}>
-        <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>{t("section1Title")}</h2>
-          <p className={styles.sectionParagraph}>{t("section1Subtitle")}</p>
+      <section className="section1">
+        <div className="sectionTitleDiv">
+          <h2 className="sectionSubtitle">{t("section1Title")}</h2>
+          <p className="sectionParagraph">{t("section1Subtitle")}</p>
         </div>
         <img
           src={uiImage}
           alt="Illustration"
-          className={styles.section1Illustration}
+          className="section1Illustration"
         />
       </section>
 
-      <section className={styles.section1}>
-        <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>{t("section2Title")}</h2>
-          <p className={styles.sectionParagraph}>{t("section2Subtitle")}</p>
+      <section className="section1">
+        <div className="sectionTitleDiv">
+          <h2 className="sectionSubtitle">{t("section2Title")}</h2>
+          <p className="sectionParagraph">{t("section2Subtitle")}</p>
         </div>
         <img
           src={starImage}
           alt="Illustration"
-          className={styles.section1Illustration}
+          className="section1Illustration"
         />
       </section>
 
-      <section className={styles.section3}>
-        <div className={styles.sectionTitleDiv}>
-          <h2 className={styles.sectionSubtitle}>{t("projectsTitle")}</h2>
-          <p className={styles.sectionParagraph}>{t("projectsSubtitle")}</p>
+      <section className="section3">
+        <div className="sectionTitleDiv">
+          <h2 className="sectionSubtitle">{t("projectsTitle")}</h2>
+          <p className="sectionParagraph">{t("projectsSubtitle")}</p>
         </div>
-        <div className={styles.projectsDiv}>
-          <div className={styles.projectCard}>
-            <img src="" alt="Logo" />
-            <h3 className={styles.projectName}>Share List</h3>
+        <div className="projectsDiv">
+          <div className="projectCard">
+            <img src={taskListLogo} alt="Logo" />
+            <h3 className="projectName">Share List</h3>
             <button
-              className={styles.projectBtn}
-              onClick={() => window.open("https://github.com/ target: blank")}
+              className="projectBtn"
+              onClick={() =>
+                window.open("https://tasklist-19334.web.app/", "target: blank")
+              }
             >
               {t("projectBtnLabel")}
             </button>
