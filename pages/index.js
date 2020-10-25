@@ -1,5 +1,4 @@
 import Head from "next/head";
-import { useRef } from "react";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
 import { CSSTransition } from "react-transition-group";
@@ -9,6 +8,7 @@ import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
 import taskListLogo from "../public/taskListLogo.png";
+import coinHUBLogo from "../public/coinHUBLogo.png";
 
 i18n.use(initReactI18next).init({
   resources: translations,
@@ -122,7 +122,10 @@ export default function Home() {
 
       <section className="section1">
         <div className="sectionTitleDiv">
-          <h2 className="sectionSubtitle">{t("section1Title")}</h2>
+          <CSSTransition in={true} timeout={100} classNames="slide">
+            <h2 className="sectionSubtitle">{t("section1Title")}</h2>
+          </CSSTransition>
+
           <p className="sectionParagraph">{t("section1Subtitle")}</p>
         </div>
         <img
@@ -153,6 +156,18 @@ export default function Home() {
           <div className="projectCard">
             <img src={taskListLogo} alt="Logo" />
             <h3 className="projectName">Share List</h3>
+            <button
+              className="projectBtn"
+              onClick={() =>
+                window.open("https://tasklist-19334.web.app/", "target: blank")
+              }
+            >
+              {t("projectBtnLabel")}
+            </button>
+          </div>
+          <div className="projectCard">
+            <img src={coinHUBLogo} alt="Logo" />
+            <h3 className="projectName">Coin HUB</h3>
             <button
               className="projectBtn"
               onClick={() =>
