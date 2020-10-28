@@ -122,7 +122,12 @@ export default function Home() {
 
       <section className="section1">
         <div className="sectionTitleDiv">
-          <CSSTransition in={true} timeout={100} classNames="slide">
+          <CSSTransition
+            in="true"
+            appear={true}
+            timeout={1000}
+            classNames="slide"
+          >
             <h2 className="sectionSubtitle">{t("section1Title")}</h2>
           </CSSTransition>
 
