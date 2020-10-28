@@ -1,7 +1,8 @@
 import Head from "next/head";
+import { useEffect } from "react";
 import i18n from "i18next";
 import { useTranslation, initReactI18next } from "react-i18next";
-import { CSSTransition } from "react-transition-group";
+import useOnScreen from "reactanimationonscreen";
 
 import translations from "../translations.json";
 import scrollIcon from "../public/scrollIcon.svg";
@@ -21,6 +22,10 @@ i18n.use(initReactI18next).init({
 
 export default function Home() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    const subtitles = useOnScreen("sectionSubtitle", "slide-appear", 0, false);
+  });
 
   return (
     <div className="container">
@@ -120,17 +125,9 @@ export default function Home() {
         <img src={scrollIcon} alt="Scroll" className="scrollIcon" />
       </div>
 
-      <section className="section1">
+      <section className="section1 section">
         <div className="sectionTitleDiv">
-          <CSSTransition
-            in="true"
-            appear={true}
-            timeout={1000}
-            classNames="slide"
-          >
-            <h2 className="sectionSubtitle">{t("section1Title")}</h2>
-          </CSSTransition>
-
+          <h2 className="sectionSubtitle">{t("section1Title")}</h2>
           <p className="sectionParagraph">{t("section1Subtitle")}</p>
         </div>
         <img
@@ -140,7 +137,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="section1">
+      <section className="section1 section">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section2Title")}</h2>
           <p className="sectionParagraph">{t("section2Subtitle")}</p>
