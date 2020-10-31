@@ -24,8 +24,13 @@ export default function Home() {
   const { t } = useTranslation();
 
   useEffect(() => {
-    const subtitles = useOnScreen("sectionSubtitle", "slide-appear", 0, false);
-  });
+    const animations = useOnScreen(
+      ["sectionSubtitle", "sectionParagraph"],
+      ["slideLeft", "slideRight"],
+      0,
+      true
+    );
+  }, []);
 
   return (
     <div className="container">

@@ -104,8 +104,6 @@
   line-height: 3rem;
   margin: 0rem;
   text-align: center;
-  /* -webkit-animation: slide-right 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-right 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
 }
 
 .sectionParagraph {
@@ -115,8 +113,6 @@
   font-size: 1.25rem;
   line-height: 1.25rem;
   font-weight: 300;
-  -webkit-animation: slide-left 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation: slide-left 1.1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   text-align: center;
 }
 
@@ -151,6 +147,7 @@
   justify-content: center;
   max-width: 250px;
   width: 90%;
+  margin-bottom: 2rem;
 }
 
 .projectName {
@@ -168,8 +165,12 @@
   cursor: pointer;
 }
 
-.slide-appear {
-  animation: slide-right 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+.slideLeft {
+  animation: slide-left 0.9s ease forwards;
+}
+
+.slideRight {
+  animation: slide-right 0.9s ease forwards;
 }
 
 @keyframes animateLogo {
