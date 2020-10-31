@@ -8,7 +8,9 @@
       "section2Subtitle": "We build everything with the technologies used by all the biggest companies in the world.",
       "projectsTitle": "Our projects",
       "projectsSubtitle": "Check some of our work.",
-      "projectBtnLabel": "Visit"
+      "projectBtnLabel": "Visit",
+      "section3Title": "Take your company to the next level",
+      "section3Subtitle": "With a custom and modern software you take your company to a whole new audience."
     }
   },
   "pt": {
@@ -20,7 +22,9 @@
       "section2Subtitle": "Construimos tudo com as tecnologias utilizadas pelas maiores empresas do mundo.",
       "projectsTitle": "Nossos projetos",
       "projectsSubtitle": "Confira alguns de nossos projetos.",
-      "projectBtnLabel": "Visitar"
+      "projectBtnLabel": "Visitar",
+      "section3Title": "Eleve sua empresa para o proximo nivel",
+      "section3Subtitle": "Com um software customizado e moderno voce leva seu negocio para outro patamar."
     }
   }
 }

@@ -8,6 +8,7 @@ import translations from "../translations.json";
 import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
+import launchImage from "../public/launch.svg";
 import taskListLogo from "../public/taskListLogo.png";
 import coinHUBLogo from "../public/coinHUBLogo.png";
 
@@ -130,7 +131,7 @@ export default function Home() {
         <img src={scrollIcon} alt="Scroll" className="scrollIcon" />
       </div>
 
-      <section className="section1 section">
+      <section className="section1">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section1Title")}</h2>
           <p className="sectionParagraph">{t("section1Subtitle")}</p>
@@ -142,7 +143,7 @@ export default function Home() {
         />
       </section>
 
-      <section className="section1 section">
+      <section className="section1">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section2Title")}</h2>
           <p className="sectionParagraph">{t("section2Subtitle")}</p>
@@ -185,6 +186,18 @@ export default function Home() {
             </button>
           </div>
         </div>
+      </section>
+
+      <section className="section1">
+        <div className="sectionTitleDiv">
+          <h2 className="sectionSubtitle">{t("section3Title")}</h2>
+          <p className="sectionParagraph">{t("section3Subtitle")}</p>
+        </div>
+        <img
+          src={launchImage}
+          alt="Illustration"
+          className="section1Illustration"
+        />
       </section>
     </div>
   );
