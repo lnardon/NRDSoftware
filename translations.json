@@ -10,7 +10,12 @@
       "projectsSubtitle": "Check some of our work.",
       "projectBtnLabel": "Visit",
       "section3Title": "Take your company to the next level",
-      "section3Subtitle": "With a custom and modern software you take your company to a whole new audience."
+      "section3Subtitle": "With a custom and modern software you take your company to a whole new audience.",
+      "contactTitle": "Contact Us",
+      "contactLabel1": "Name:",
+      "contactLabel2": "Email:",
+      "contactLabel3": "Message:",
+      "contactBtn": "Send message"
     }
   },
   "pt": {

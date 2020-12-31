@@ -5,6 +5,8 @@ import { useTranslation, initReactI18next } from "react-i18next";
 import useOnScreen from "reactanimationonscreen";
 
 import translations from "../translations.json";
+import ContactSection from "../components/ContactSection";
+
 import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
@@ -130,7 +132,6 @@ export default function Home() {
         </select>
         <img src={scrollIcon} alt="Scroll" className="scrollIcon" />
       </div>
-
       <section className="section1">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section1Title")}</h2>
@@ -142,7 +143,6 @@ export default function Home() {
           className="section1Illustration"
         />
       </section>
-
       <section className="section1">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section2Title")}</h2>
@@ -154,7 +154,6 @@ export default function Home() {
           className="section1Illustration"
         />
       </section>
-
       <section className="section3">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("projectsTitle")}</h2>
@@ -187,7 +186,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="section1">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section3Title")}</h2>
@@ -199,6 +197,7 @@ export default function Home() {
           className="section1Illustration"
         />
       </section>
+      <ContactSection />
     </div>
   );
 }

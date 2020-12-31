@@ -1,0 +1,79 @@
+.container {
+  width: 100%;
+  background-color: #131313;
+  padding: 3rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.title {
+  width: 90%;
+  max-width: 800px;
+  font-size: 3rem;
+  line-height: 3.125rem;
+  margin: 0rem;
+  text-align: center;
+  color: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.separator {
+  width: 75px;
+  height: 2px;
+  background-color: #fafafa;
+  margin-bottom: 1rem;
+}
+
+.formDiv {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.inputDiv {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  max-width: 300px;
+}
+
+.inputDiv > label {
+  color: #fafafa;
+  font-size: 1.25rem;
+}
+
+.inputDiv > input {
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1rem;
+  outline: none;
+  margin-bottom: 0.75rem;
+}
+
+.inputDiv > textarea {
+  width: 100%;
+  padding: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.125rem;
+  outline: none;
+  margin-bottom: 0.75rem;
+  height: 125px;
+  font-family: "Poppins", sans-serif;
+  resize: none;
+}
+
+.formDiv > button {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  outline: none;
+  background-color: transparent;
+  border: 2px solid #fafafa;
+  color: #fafafa;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: bold;
+}

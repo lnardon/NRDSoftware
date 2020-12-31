@@ -1,40 +1,40 @@
-// import nodemailer from "nodemailer";
-// import smtpTransport from "nodemailer-smtp-transport";
+import nodemailer from "nodemailer";
+import smtpTransport from "nodemailer-smtp-transport";
 
-// export default async (req, res) => {
-//   const transporter = nodemailer.createTransport(
-//     smtpTransport({
-//       service: "gmail",
-//       auth: {
-//         user: process.env.EMAIL,
-//         pass: process.env.EMAIL_PASS,
-//       },
-//     })
-//   );
+export default async (req, res) => {
+  const transporter = nodemailer.createTransport(
+    smtpTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.EMAIL_PASS,
+      },
+    })
+  );
 
-//   const mailOptions = {
-//     from: process.env.EMAIL,
-//     to: req.body.email,
-//     subject: "Contact",
-//     text: req.body.list,
-//   };
+  const mailOptions = {
+    from: process.env.EMAIL,
+    to: "lucaslnardon@gmail.com",
+    subject: "NRD Software Contact",
+    text: req.body.message,
+  };
 
-//   transporter.sendMail(mailOptions, (error, info) => {
-//     let response;
-//     if (error) {
-//       response = {
-//         statusCode: 500,
-//         body: JSON.stringify({
-//           error: error.message,
-//         }),
-//       };
-//     }
-//     response = {
-//       statusCode: 200,
-//       body: JSON.stringify({
-//         message: `Email processed succesfully!`,
-//       }),
-//     };
-//     res.send(response);
-//   });
-// };
+  transporter.sendMail(mailOptions, (error, info) => {
+    let response;
+    if (error) {
+      response = {
+        statusCode: 500,
+        body: JSON.stringify({
+          error: error.message,
+        }),
+      };
+    }
+    response = {
+      statusCode: 200,
+      body: JSON.stringify({
+        message: `Email processed succesfully!`,
+      }),
+    };
+    res.send(response);
+  });
+};
