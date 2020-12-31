@@ -2,6 +2,7 @@ import nodemailer from "nodemailer";
 import smtpTransport from "nodemailer-smtp-transport";
 
 export default async (req, res) => {
+  console.log(process.env.EMAIL, process.env.EMAIL_PASS);
   const transporter = nodemailer.createTransport(
     smtpTransport({
       service: "gmail",
@@ -13,15 +14,16 @@ export default async (req, res) => {
   );
 
   const mailOptions = {
-    from: process.env.EMAIL,
+    from: req.body.email,
     to: "lucaslnardon@gmail.com",
     subject: "NRD Software Contact",
-    text: req.body.message,
+    text: ` Name: ${req.body.name} \n\n Message: ${req.body.message}`,
   };
 
   transporter.sendMail(mailOptions, (error, info) => {
     let response;
     if (error) {
+      console.error(error);
       response = {
         statusCode: 500,
         body: JSON.stringify({
