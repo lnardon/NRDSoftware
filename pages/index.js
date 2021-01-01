@@ -6,13 +6,12 @@ import useOnScreen from "reactanimationonscreen";
 
 import translations from "../translations.json";
 import ContactSection from "../components/ContactSection";
+import ProjectsSection from "../components/ProjectsSection";
 
 import scrollIcon from "../public/scrollIcon.svg";
 import uiImage from "../public/ui.svg";
 import starImage from "../public/star.svg";
 import launchImage from "../public/launch.svg";
-import taskListLogo from "../public/taskListLogo.png";
-import coinHUBLogo from "../public/coinHUBLogo.png";
 
 i18n.use(initReactI18next).init({
   resources: translations,
@@ -154,38 +153,7 @@ export default function Home() {
           className="section1Illustration"
         />
       </section>
-      <section className="section3">
-        <div className="sectionTitleDiv">
-          <h2 className="sectionSubtitle">{t("projectsTitle")}</h2>
-          <p className="sectionParagraph">{t("projectsSubtitle")}</p>
-        </div>
-        <div className="projectsDiv">
-          <div className="projectCard">
-            <img src={taskListLogo} alt="Logo" />
-            <h3 className="projectName">Share List</h3>
-            <button
-              className="projectBtn"
-              onClick={() =>
-                window.open("https://tasklist-19334.web.app/", "target: blank")
-              }
-            >
-              {t("projectBtnLabel")}
-            </button>
-          </div>
-          <div className="projectCard">
-            <img src={coinHUBLogo} alt="Logo" />
-            <h3 className="projectName">Coin HUB</h3>
-            <button
-              className="projectBtn"
-              onClick={() =>
-                window.open("https://tasklist-19334.web.app/", "target: blank")
-              }
-            >
-              {t("projectBtnLabel")}
-            </button>
-          </div>
-        </div>
-      </section>
+      <ProjectsSection />
       <section className="section1">
         <div className="sectionTitleDiv">
           <h2 className="sectionSubtitle">{t("section3Title")}</h2>

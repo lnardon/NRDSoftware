@@ -1,4 +1,5 @@
 import { useState } from "react";
+import axios from "axios";
 import styles from "./ContactSection.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -9,13 +10,7 @@ export default function ContactSection({}) {
   const [message, setMessage] = useState("");
 
   const handleMessage = async () => {
-    let response = await fetch("http://localhost:3000/api/sendMessage", {
-      method: "POST",
-      mode: "cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ name, email, message }),
-    });
-    console.log(response);
+    axios.post("/api/sendMessage", { name, email, message });
   };
 
   return (
