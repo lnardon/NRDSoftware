@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { useEffect } from "react";
 import i18n from "i18next";
-import { useTranslation, initReactI18next } from "react-i18next";
+import { initReactI18next } from "react-i18next";
 import useOnScreen from "reactanimationonscreen";
 
 import translations from "../translations.json";
@@ -21,8 +21,6 @@ i18n.use(initReactI18next).init({
 });
 
 export default function Home() {
-  const { t } = useTranslation();
-
   useEffect(() => {
     const animations = useOnScreen(
       ["sectionSubtitle", "sectionParagraph"],
