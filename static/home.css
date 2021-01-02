@@ -18,6 +18,10 @@
   padding: 0rem 1rem;
 }
 
+.splashTitleDiv {
+  position: absolute;
+}
+
 .websiteTitle {
   font-size: 5rem;
   text-align: center;
