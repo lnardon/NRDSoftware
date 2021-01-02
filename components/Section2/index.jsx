@@ -8,16 +8,22 @@ function Section2() {
   const { t } = useTranslation();
 
   return (
-    <div className="section1">
-      <div className="sectionTitleDiv">
-        <h2 className="sectionSubtitle">{t("section3Title")}</h2>
-        <p className="sectionParagraph">{t("section3Subtitle")}</p>
-      </div>
-      <img
-        src={launchImage}
-        alt="Illustration"
-        className="section1Illustration"
-      />
+    <div className={styles.sectionContainer}>
+      <section className={styles.div}>
+        <div className={styles.sectionTitleDiv}>
+          <h2 className={styles.sectionSubtitle + " sectionSubtitle"}>
+            {t("section3Title")}
+          </h2>
+          <p className={styles.sectionParagraph + " sectionParagraph"}>
+            {t("section3Subtitle")}
+          </p>
+        </div>
+        <img
+          src={launchImage}
+          alt="Illustration"
+          className={styles.section1Illustration}
+        />
+      </section>
     </div>
   );
 }

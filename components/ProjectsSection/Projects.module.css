@@ -26,6 +26,7 @@
   line-height: 3.125rem;
   margin: 0rem;
   text-align: center;
+  opacity: 0;
 }
 
 .subtitle {
@@ -36,6 +37,7 @@
   line-height: 1.25rem;
   font-weight: 300;
   text-align: center;
+  opacity: 0;
 }
 
 .projectsDiv {

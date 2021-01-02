@@ -8,10 +8,14 @@ function ProjectsSection() {
   const { t } = useTranslation();
 
   return (
-    <div className={styles.container}>
+    <div div className={styles.container}>
       <div className={styles.titleDiv}>
-        <h2 className={styles.title}>{t("projectsTitle")}</h2>
-        <p className={styles.subtitle}>{t("projectsSubtitle")}</p>
+        <h2 className={styles.title + " sectionSubtitle"}>
+          {t("projectsTitle")}
+        </h2>
+        <p className={styles.subtitle + " sectionParagraph"}>
+          {t("projectsSubtitle")}
+        </p>
       </div>
       <div className={styles.projectsDiv}>
         <div className={styles.projectCard}>
