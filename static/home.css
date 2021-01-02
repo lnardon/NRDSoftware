@@ -77,12 +77,20 @@
   width: 100%;
 }
 
+.contactForm {
+  opacity: 0;
+}
+
 .slideLeft {
   animation: slide-left 0.9s ease forwards;
 }
 
 .slideRight {
   animation: slide-right 0.9s ease forwards;
+}
+
+.slideUp {
+  animation: slide-up 0.9s ease forwards;
 }
 
 @keyframes animateLogo {
@@ -170,6 +178,31 @@
   100% {
     -webkit-transform: translateX(0);
     transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-up {
+  0% {
+    -webkit-transform: translateY(20%);
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
     opacity: 1;
   }
 }

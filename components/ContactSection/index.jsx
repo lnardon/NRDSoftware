@@ -17,7 +17,7 @@ export default function ContactSection({}) {
     <div className={styles.container}>
       <h1 className={styles.title}> {t("contactTitle")}</h1>
       <span className={styles.separator}></span>
-      <div className={styles.formDiv}>
+      <div className={styles.formDiv + " contactForm"}>
         <div className={styles.inputDiv}>
           <label htmlFor="">{t("contactLabel1")}</label>
           <input
