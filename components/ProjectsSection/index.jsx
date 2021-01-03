@@ -50,6 +50,27 @@ function ProjectsSection() {
             {t("projectBtnLabel")}
           </button>
         </div>
+        <div className={styles.projectCard + " contactForm"}>
+          <img
+            src={
+              "https://www.flaticon.com/svg/static/icons/svg/2922/2922888.svg"
+            }
+            alt="Logo"
+            className={styles.cardImg}
+          />
+          <h3 className={styles.projectName}>3D Credit Card</h3>
+          <button
+            className={styles.projectBtn}
+            onClick={() =>
+              window.open(
+                "https://lnardon.github.io/3DCreditCard/",
+                "target: blank"
+              )
+            }
+          >
+            {t("projectBtnLabel")}
+          </button>
+        </div>
       </div>
     </div>
   );
