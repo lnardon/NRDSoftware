@@ -21,7 +21,7 @@ function Section2() {
         <img
           src={launchImage}
           alt="Illustration"
-          className={styles.section1Illustration}
+          className={styles.section1Illustration + " sectionImage"}
         />
       </section>
     </div>

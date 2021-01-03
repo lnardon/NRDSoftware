@@ -22,7 +22,7 @@ function Section1() {
         <img
           src={uiImage}
           alt="Illustration"
-          className="section1Illustration"
+          className="section1Illustration sectionImage"
         />
       </section>
       <section className={styles.div2}>
@@ -37,7 +37,7 @@ function Section1() {
         <img
           src={starImage}
           alt="Illustration"
-          className="section1Illustration"
+          className="section1Illustration sectionImage"
         />
       </section>
     </div>

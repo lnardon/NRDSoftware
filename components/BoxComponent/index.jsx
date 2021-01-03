@@ -6,26 +6,26 @@ import Font from "./font.json";
 const Box = (props) => {
   const mesh = useRef();
   useFrame(() => {
-    mesh.current.rotation.z += 0.023;
+    mesh.current.rotation.y += 0.00623;
   });
 
-  const font = new THREE.FontLoader().parse(Font);
+  // const font = new THREE.FontLoader().parse(Font);
 
-  const textOptions = {
-    font,
-    size: 1,
-    height: 0.2,
-    curveSegments: 21,
-  };
+  // const textOptions = {
+  //   font,
+  //   size: 1,
+  //   height: 0.2,
+  //   curveSegments: 21,
+  // };
 
   return (
-    <mesh {...props} ref={mesh} rotation={[0, 0, 0]}>
+    <mesh {...props} ref={mesh} rotation={[0, 0, Math.PI / 4]}>
       <boxGeometry attach="geometry" args={props.size} />
-      <meshNormalMaterial
-      // color={0xfafafa}
-      // wireframe={true}
-      // wireframeLinewidth={3}
-      ></meshNormalMaterial>
+      <meshStandardMaterial
+        color={0xfafafa}
+        wireframe={true}
+        wireframeLinewidth={4}
+      ></meshStandardMaterial>
     </mesh>
   );
 };

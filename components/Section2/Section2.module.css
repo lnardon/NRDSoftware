@@ -24,7 +24,7 @@
 
 .sectionSubtitle {
   width: 90%;
-  max-width: 800px;
+  max-width: 600px;
   font-size: 3rem;
   line-height: 3.125rem;
   margin: 0rem;
@@ -34,7 +34,7 @@
 
 .sectionParagraph {
   width: 90%;
-  max-width: 800px;
+  max-width: 300px;
   margin: 1rem 0rem;
   font-size: 1.25rem;
   line-height: 1.25rem;
