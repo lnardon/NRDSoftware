@@ -12,14 +12,19 @@ function Scene() {
     gl: { domElement },
   } = useThree();
 
-  useFrame((state) => controls.current.update());
+  var angle = 0;
+  var radius = 7;
+  useFrame((state) => {
+    // controls.current.update();
+    // camera.position.x = radius * Math.cos(angle);
+    // camera.position.z = radius * Math.sin(angle);
+    // angle += 0.01;
+  });
 
   return (
     <>
-      <Box position={[-3, 2, 0]} size={[1, 1, 1]} />
-      <Box position={[3, -2, 0]} size={[0.6, 0.6, 0.6]} />
-      <Box position={[3, 2, 0]} size={[0.35, 0.35, 0.35]} />
-      <Box position={[-3, -2, 0]} size={[0.85, 0.85, 0.85]} />
+      <Box position={[3, 0, 0]} size={[0.75, 0.75, 0.75]} />
+      <Box position={[-3, 0, 0]} size={[0.75, 0.75, 0.75]} />
       <ambientLight intensity={0.75} />
       <spotLight position={[0, 30, 0]} angle={180} penumbra={100} />
       <orbitControls

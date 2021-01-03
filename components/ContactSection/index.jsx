@@ -10,7 +10,11 @@ export default function ContactSection({}) {
   const [message, setMessage] = useState("");
 
   const handleMessage = async () => {
-    axios.post("/api/sendMessage", { name, email, message });
+    axios.post("https://petalite-shy-tendency.glitch.me/sendMessage", {
+      name,
+      email,
+      message,
+    });
   };
 
   return (
