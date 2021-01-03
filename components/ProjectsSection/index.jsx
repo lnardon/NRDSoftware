@@ -18,7 +18,7 @@ function ProjectsSection() {
         </p>
       </div>
       <div className={styles.projectsDiv}>
-        <div className={styles.projectCard}>
+        <div className={styles.projectCard + " contactForm"}>
           <img src={taskListLogo} alt="Logo" />
           <h3 className={styles.projectName}>Share List</h3>
           <button

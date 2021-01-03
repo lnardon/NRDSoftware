@@ -4885,10 +4885,10 @@ react@16.14.0:
     object-assign "^4.1.1"
     prop-types "^15.6.2"
 
-reactanimationonscreen@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/reactanimationonscreen/-/reactanimationonscreen-0.7.0.tgz#e66c3468e87b309b1912b0ec5b95737a46132e48"
-  integrity sha512-/tnTyLabum3QCgXaVGJWBYb3WvO0H9YYg2F4u1Gh8O6LtOPf/v0B/ZhqLzSrUwrX+YuqlK7ndVojw1JXHJreMQ==
+reactanimationonscreen@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/reactanimationonscreen/-/reactanimationonscreen-1.0.0.tgz#a3f0af620b507e871823eb2003c5e562c203d7b9"
+  integrity sha512-TTQ4/eIFy8JOiJmj+IiqUm/dRDu46EGtTOyMLVE7s9sSzT/SI+uouqywE2rHv7yjIc3HeuqcajHdcldbPoj/sg==
 
 "readable-stream@1 || 2", readable-stream@^2.0.0, readable-stream@^2.0.1, readable-stream@^2.0.2, readable-stream@^2.1.5, readable-stream@^2.2.2, readable-stream@^2.3.3, readable-stream@^2.3.6, readable-stream@~2.3.6:
   version "2.3.7"

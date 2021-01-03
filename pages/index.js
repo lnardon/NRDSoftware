@@ -24,9 +24,8 @@ export default function Home() {
   useEffect(() => {
     const animations = useOnScreen(
       ["sectionSubtitle", "sectionParagraph", "contactForm"],
-      ["slideLeft", "slideRight", "slideUp"],
-      50,
-      true
+      ["titleAnim", "subtitleAnim", "slideUp"],
+      25
     );
   }, []);
 

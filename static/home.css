@@ -85,11 +85,11 @@
   opacity: 0;
 }
 
-.slideLeft {
+.titleAnim {
   animation: slide-left 0.9s ease forwards;
 }
 
-.slideRight {
+.subtitleAnim {
   animation: slide-right 0.9s ease forwards;
 }
 
@@ -97,6 +97,13 @@
   animation: slide-up 0.9s ease forwards;
 }
 
+@media (min-width: 1200px) {
+  .subtitleAnim {
+    animation: slide-left 0.9s ease forwards;
+  }
+}
+
+/* KEYFRAMES */
 @keyframes animateLogo {
   to {
     stroke-dashoffset: 0;
