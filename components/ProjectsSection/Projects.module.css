@@ -61,6 +61,10 @@
   margin-bottom: 2rem;
 }
 
+.cardImg {
+  height: 5rem;
+}
+
 .projectName {
   margin: 1rem 0rem;
 }

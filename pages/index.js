@@ -23,8 +23,8 @@ i18n.use(initReactI18next).init({
 export default function Home() {
   useEffect(() => {
     const animations = useOnScreen(
-      ["sectionSubtitle", "sectionParagraph", "contactForm"],
-      ["titleAnim", "subtitleAnim", "slideUp"],
+      ["sectionSubtitle", "sectionParagraph", "sectionImage", "contactForm"],
+      ["titleAnim", "subtitleAnim", "slideUp", "slideUp"],
       25
     );
   }, []);
