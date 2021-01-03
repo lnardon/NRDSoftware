@@ -10,6 +10,7 @@ import Section1 from "../components/Section1";
 import ProjectsSection from "../components/ProjectsSection";
 import Section2 from "../components/Section2";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 i18n.use(initReactI18next).init({
   resources: translations,
@@ -46,6 +47,7 @@ export default function Home() {
       <ProjectsSection />
       <Section2 />
       <ContactSection />
+      <Footer />
     </div>
   );
 }
