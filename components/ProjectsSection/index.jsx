@@ -9,7 +9,7 @@ function ProjectsSection() {
   const { t } = useTranslation();
 
   return (
-    <div div className={styles.container}>
+    <div className={styles.container}>
       <div className={styles.titleDiv}>
         <h2 className={styles.title + " sectionSubtitle"}>
           {t("projectsTitle")}
@@ -64,6 +64,27 @@ function ProjectsSection() {
             onClick={() =>
               window.open(
                 "https://lnardon.github.io/3DCreditCard/",
+                "target: blank"
+              )
+            }
+          >
+            {t("projectBtnLabel")}
+          </button>
+        </div>
+        <div className={styles.projectCard + " contactForm"}>
+          <img
+            src={
+              "https://raw.githubusercontent.com/lnardon/PersonalWebsite/master/public/images/eu.png?token=AKMS2QAKANQVTB5CSZGQMFK77QDB2"
+            }
+            alt="Logo"
+            className={styles.cardImg}
+          />
+          <h3 className={styles.projectName}>Lucas Nardon</h3>
+          <button
+            className={styles.projectBtn}
+            onClick={() =>
+              window.open(
+                "https://personalwebsite-5d16b.web.app/",
                 "target: blank"
               )
             }

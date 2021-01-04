@@ -53,7 +53,7 @@
   width: 15px;
   position: absolute;
   bottom: 2rem;
-  animation: scrollAnimation 1.3s ease alternate infinite;
+  animation: scrollAnimation 0.9s ease alternate infinite;
 }
 
 .languageSelect {
@@ -87,14 +87,17 @@
 
 .titleAnim {
   animation: slide-left 0.9s ease forwards;
+  opacity: 1;
 }
 
 .subtitleAnim {
   animation: slide-right 0.9s ease forwards;
+  opacity: 1;
 }
 
 .slideUp {
   animation: slide-up 0.9s ease forwards;
+  opacity: 1;
 }
 
 @media (min-width: 1200px) {
