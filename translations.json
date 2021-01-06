@@ -15,7 +15,10 @@
       "contactLabel1": "Name:",
       "contactLabel2": "Email:",
       "contactLabel3": "Message:",
-      "contactBtn": "Send message"
+      "contactBtn": "Send message",
+      "detailCard1": "Websites and Apps.",
+      "detailCard2": "Automation and Productivity.",
+      "detailCard3": "Proof of Concept."
     }
   },
   "pt": {
