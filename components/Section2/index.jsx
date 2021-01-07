@@ -38,7 +38,7 @@ function Section2() {
         </div>
         <div className={styles.cardContainer}>
           <img
-            src={Triangle1}
+            src={Triangle3}
             alt="Illustration"
             className={styles.section1Illustration + " sectionImage"}
           />
@@ -54,7 +54,7 @@ function Section2() {
         </div>
         <div className={styles.cardContainer}>
           <img
-            src={Triangle1}
+            src={Triangle2}
             alt="Illustration"
             className={styles.section1Illustration + " sectionImage"}
           />
