@@ -18,13 +18,16 @@
       "contactBtn": "Send message",
       "detailCard1": "Websites and Apps.",
       "detailCard2": "Automation and Productivity.",
-      "detailCard3": "Proof of Concept."
+      "detailCard3": "Proof of Concept.",
+      "detailCard4": "Websites and Apps.",
+      "detailCard5": "Automation and Productivity.",
+      "detailCard6": "Proof of Concept."
     }
   },
   "pt": {
     "translation": {
       "logoSubtitle": "Excelencia em software",
-      "section1Title": "Software feito exclusivamente para te atender",
+      "section1Title": "Software feito para te atender",
       "section1Subtitle": "100% criado para atender suas necessidades",
       "section2Title": "Moderno e Confiavel",
       "section2Subtitle": "Construimos tudo com as tecnologias utilizadas pelas maiores empresas do mundo.",
@@ -32,7 +35,18 @@
       "projectsSubtitle": "Confira alguns de nossos projetos.",
       "projectBtnLabel": "Visitar",
       "section3Title": "Eleve sua empresa para o proximo nivel",
-      "section3Subtitle": "Com um software customizado e moderno voce leva seu negocio para outro patamar."
+      "section3Subtitle": "Com um software customizado e moderno voce leva seu negocio para outro patamar.",
+      "contactTitle": "Entre em contato",
+      "contactLabel1": "Nome:",
+      "contactLabel2": "Email:",
+      "contactLabel3": "Mensagem:",
+      "contactBtn": "Enviar mensagem",
+      "detailCard1": "Sites e Aplicativos.",
+      "detailCard2": "Automacao e Produtividade.",
+      "detailCard3": "Prova de conceito.",
+      "detailCard4": "Websites and Apps.",
+      "detailCard5": "Automation and Productivity.",
+      "detailCard6": "Proof of Concept."
     }
   }
 }
