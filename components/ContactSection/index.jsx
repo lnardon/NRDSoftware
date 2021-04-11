@@ -26,7 +26,11 @@ export default function ContactSection({}) {
           <label htmlFor="">{t("contactLabel1")}</label>
           <input
             type="text"
-            onChange={(e) => setName(e.target.value)}
+            onChange={(e) =>
+              setName(e.target.value, () => {
+                alert("Hey");
+              })
+            }
             value={name}
           />
         </div>

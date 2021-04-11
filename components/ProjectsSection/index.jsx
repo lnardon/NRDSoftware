@@ -53,17 +53,17 @@ function ProjectsSection() {
         <div className={styles.projectCard + " contactForm"}>
           <img
             src={
-              "https://www.flaticon.com/svg/static/icons/svg/2922/2922888.svg"
+              "https://www.flaticon.com/svg/vstatic/svg/244/244309.svg?token=exp=1618109211~hmac=3982ea4a924ca3e3ecf0f16186228156"
             }
             alt="Logo"
             className={styles.cardImg}
           />
-          <h3 className={styles.projectName}>3D Credit Card</h3>
+          <h3 className={styles.projectName}>3D Eyeball</h3>
           <button
             className={styles.projectBtn}
             onClick={() =>
               window.open(
-                "https://lnardon.github.io/3DCreditCard/",
+                "https://lnardon.github.io/MouseFollower/",
                 "target: blank"
               )
             }
@@ -73,9 +73,7 @@ function ProjectsSection() {
         </div>
         <div className={styles.projectCard + " contactForm"}>
           <img
-            src={
-              "https://raw.githubusercontent.com/lnardon/PersonalWebsite/master/public/images/eu.png?token=AKMS2QAKANQVTB5CSZGQMFK77QDB2"
-            }
+            src={"https://avatars.githubusercontent.com/u/43593024?v=4"}
             alt="Logo"
             className={styles.cardImg}
           />
