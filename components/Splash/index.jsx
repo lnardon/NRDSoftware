@@ -11,9 +11,9 @@ function Splash({ i18n }) {
 
   return (
     <div className="splashDiv">
-      <Canvas>
+      {/* <Canvas>
         <Scene />
-      </Canvas>
+      </Canvas> */}
       <select
         className="languageSelect"
         name="language"

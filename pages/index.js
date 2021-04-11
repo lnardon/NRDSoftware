@@ -45,7 +45,7 @@ export default function Home() {
       <SplashSection i18n={i18n} />
       <Section1 />
       <ProjectsSection />
-      <Section2 />
+      {/* <Section2 /> */}
       <ContactSection />
       <Footer />
     </div>
