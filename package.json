@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "deploy": "next build && next export && firebase deploy",
+    "deploy": "vercel --prod",
     "build": "next build",
     "start": "next start",
     "export": "next export"
@@ -12,7 +12,6 @@
   "dependencies": {
     "@babel/core": "^7.12.3",
     "axios": "^0.21.1",
-    "firebase": "^8.0.0",
     "i18next": "^19.8.2",
     "next": "9.5.5",
     "next-images": "^1.6.0",
