@@ -26,7 +26,7 @@ export default function Home() {
     useOnScreen(
       ["sectionSubtitle", "sectionParagraph", "sectionImage", "contactForm"],
       ["titleAnim", "subtitleAnim", "slideUp", "slideUp"],
-      1
+      -150
     );
   }, []);
 

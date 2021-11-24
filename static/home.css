@@ -79,6 +79,7 @@
 .section1Illustration {
   max-width: 800px;
   width: 100%;
+  opacity: 0;
 }
 
 .contactForm {
