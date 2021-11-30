@@ -1,8 +1,5 @@
-import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
-import { Canvas } from "react-three-fiber";
 
-import Scene from "../Scene";
 import styles from "./Splash.module.css";
 import scrollIcon from "../../public/scrollIcon.svg";
 
@@ -11,9 +8,6 @@ function Splash({ i18n }) {
 
   return (
     <div className="splashDiv">
-      {/* <Canvas>
-        <Scene />
-      </Canvas> */}
       <select
         className="languageSelect"
         name="language"

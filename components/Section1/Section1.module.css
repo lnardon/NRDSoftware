@@ -29,7 +29,6 @@
   line-height: 3.125rem;
   margin: 0rem;
   text-align: start;
-  opacity: 0;
 }
 
 .sectionParagraph {
@@ -40,7 +39,6 @@
   line-height: 1.25rem;
   font-weight: 300;
   text-align: start;
-  opacity: 0;
 }
 
 .div2 {
@@ -70,7 +68,6 @@
   line-height: 3.125rem;
   margin: 0rem;
   text-align: end;
-  opacity: 0;
 }
 
 .sectionParagraph2 {
@@ -81,7 +78,6 @@
   line-height: 1.25rem;
   font-weight: 300;
   text-align: end;
-  opacity: 0;
 }
 
 @media (max-width: 1200px) {
