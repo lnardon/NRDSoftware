@@ -9,7 +9,7 @@
 }
 
 .title {
-  width: 90%;
+  width: 100%;
   max-width: 800px;
   font-size: 3rem;
   line-height: 3.125rem;
@@ -37,7 +37,7 @@
 .inputDiv {
   display: flex;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   max-width: 300px;
 }
 
