@@ -8,7 +8,7 @@
   justify-content: center;
   overflow: hidden;
   color: #fafafa;
-  padding: 3rem 0rem;
+  padding: 5rem 0rem;
 }
 
 .titleDiv {
@@ -17,6 +17,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
+  margin-bottom: 2rem;
 }
 
 .title {
@@ -38,15 +39,24 @@
   text-align: center;
 }
 
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  max-width: 250px;
+  margin: 3rem 0rem;
+}
+
 .projectsDiv {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   max-width: 1200px;
   flex-wrap: wrap;
-  margin-top: 5rem;
 }
 
 .projectCard {
@@ -56,7 +66,6 @@
   justify-content: center;
   max-width: 250px;
   width: 90%;
-  margin-bottom: 3rem;
 }
 
 .cardImg {
@@ -82,4 +91,14 @@
 .projectBtn:hover {
   background-color: #fafafa;
   color: #131313;
+}
+
+@media (max-width: 572px) {
+  .cardContainer {
+    margin: 0rem;
+  }
+  .projectCard {
+    padding: 2rem 0rem;
+    border-bottom: 2px solid #fafafa;
+  }
 }

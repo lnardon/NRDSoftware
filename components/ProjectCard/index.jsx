@@ -7,9 +7,9 @@ function ProjectCard({ project, label, index }) {
     <AnimatedOnViewport
       variants={slideUpAnimation}
       custom={index}
-      className={styles.projectCard}
+      className={styles.cardContainer}
       renderProps={() => (
-        <>
+        <div className={styles.projectCard}>
           <img src={project.image} alt="Logo" className={styles.cardImg} />
           <h3 className={styles.projectName}>{project.name}</h3>
           <button
@@ -18,7 +18,7 @@ function ProjectCard({ project, label, index }) {
           >
             {label}
           </button>
-        </>
+        </div>
       )}
     />
   );
