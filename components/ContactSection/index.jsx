@@ -11,12 +11,20 @@ export default function ContactSection({}) {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  const validateFormData = () => {
+    return name.length > 0 && email.length > 0 && message.length > 0;
+  };
+
   const handleMessage = async () => {
-    axios.post("https://petalite-shy-tendency.glitch.me/sendMessage", {
-      name,
-      email,
-      message,
-    });
+    if (validateFormData()) {
+      axios.post("https://petalite-shy-tendency.glitch.me/sendMessage", {
+        name,
+        email,
+        message,
+      });
+    } else {
+      alert("Sorry, all form fields must be filled.");
+    }
   };
 
   return (
@@ -33,11 +41,7 @@ export default function ContactSection({}) {
                 <label htmlFor="">{t("contactLabel1")}</label>
                 <input
                   type="text"
-                  onChange={(e) =>
-                    setName(e.target.value, () => {
-                      alert("Hey");
-                    })
-                  }
+                  onChange={(e) => setName(e.target.value)}
                   value={name}
                 />
               </div>

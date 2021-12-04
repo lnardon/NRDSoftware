@@ -7,7 +7,6 @@ function AnimatedOnViewport({
   variants,
   index = null,
   className = "",
-  divStyles,
 }) {
   const controls = useAnimation();
   const [ref, inView] = useInView();
@@ -26,7 +25,6 @@ function AnimatedOnViewport({
       variants={variants}
       custom={index}
       className={className}
-      style={divStyles}
     >
       {renderProps()}
     </motion.div>
