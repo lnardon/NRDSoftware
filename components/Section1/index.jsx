@@ -14,7 +14,10 @@ function Section1() {
   return (
     <div className={styles.sectionContainer}>
       <section className={styles.div}>
-        <div className={styles.sectionTitleDiv}>
+        <div
+          className={styles.sectionTitleDiv}
+          styles={{ alignItems: "flex-start !important" }}
+        >
           <AnimatedOnViewport
             variants={slideRightAnimation}
             renderProps={() => (
@@ -41,7 +44,10 @@ function Section1() {
         />
       </section>
       <section className={styles.div2}>
-        <div className={styles.sectionTitleDiv}>
+        <div
+          className={styles.sectionTitleDiv2}
+          styles={{ alignItems: "flex-end !important" }}
+        >
           <AnimatedOnViewport
             variants={slideLeftAnimation}
             className={styles.sectionSubtitle2}

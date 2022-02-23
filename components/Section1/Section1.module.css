@@ -22,6 +22,14 @@
   justify-content: flex-end;
 }
 
+.sectionTitleDiv2 {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
 .sectionSubtitle {
   width: 90%;
   max-width: 800px;
@@ -49,7 +57,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: center !important;
   overflow: hidden;
 }
 
@@ -62,21 +70,24 @@
 }
 
 .sectionSubtitle2 {
-  width: 90%;
+  width: 80%;
   max-width: 600px;
   font-size: 3rem;
   line-height: 3.125rem;
-  margin: 0rem;
+  margin: 0rem !important;
   text-align: end;
 }
 
 .sectionParagraph2 {
-  width: 90%;
-  max-width: 300px;
-  margin: 1rem 0rem;
+  width: 80%;
+  max-width: 600px;
+  margin: 1rem 0rem !important;
   font-size: 1.25rem;
   line-height: 1.25rem;
   font-weight: 300;
+}
+
+.sectionParagraph2 > p {
   text-align: end;
 }
 
@@ -90,15 +101,19 @@
 
   .sectionTitleDiv {
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
+    width: 70%;
   }
 
   .sectionSubtitle {
     text-align: center;
+    margin: 0rem;
+    width: 100%;
   }
 
   .sectionParagraph {
     text-align: center;
+    width: 100%;
   }
 
   .div2 {
@@ -111,13 +126,16 @@
   .sectionTitleDiv2 {
     align-items: center;
     justify-content: flex-end;
+    width: 70%;
   }
 
   .sectionSubtitle2 {
     text-align: center;
+    width: 100%;
   }
 
   .sectionParagraph2 {
-    text-align: center;
+    text-align: center !important;
+    width: 100%;
   }
 }
