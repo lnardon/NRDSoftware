@@ -86,3 +86,39 @@
   border: 2px solid transparent;
   color: #171717;
 }
+
+.feedbackContainer {
+  background-color: #131313;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 2rem 0rem;
+  animation: fade 1s ease 0.3s forwards;
+  opacity: 0;
+}
+
+.feedbackIllustration {
+  width: 70%;
+  max-width: 700px;
+}
+
+.feedbackTitle {
+  color: #fafafa;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  margin: 3rem 0rem 4rem 0rem;
+  width: 70%;
+  text-align: center;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

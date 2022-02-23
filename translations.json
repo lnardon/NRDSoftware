@@ -21,7 +21,8 @@
       "detailCard3": "Proof of Concept.",
       "detailCard4": "Websites and Apps.",
       "detailCard5": "Automation and Productivity.",
-      "detailCard6": "Proof of Concept."
+      "detailCard6": "Proof of Concept.",
+      "messageFeedbackTitle": "Message Sent Successfully!"
     }
   },
   "pt": {
@@ -46,7 +47,8 @@
       "detailCard3": "Prova de conceito.",
       "detailCard4": "Websites and Apps.",
       "detailCard5": "Automation and Productivity.",
-      "detailCard6": "Proof of Concept."
+      "detailCard6": "Proof of Concept.",
+      "messageFeedbackTitle": "Mensagem enviada com sucesso!"
     }
   }
 }
